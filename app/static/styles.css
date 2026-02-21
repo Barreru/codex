@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif;
+  background: #0b1220;
+  color: #e6edf6;
+}
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.subtitle { color: #a9b8d0; }
+.card {
+  background: #151f33;
+  border: 1px solid #2b3b5f;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5rem;
+}
+button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem;
+  cursor: pointer;
+}
+input {
+  border-radius: 8px;
+  border: 1px solid #415681;
+  padding: 0.5rem;
+  background: #0e1728;
+  color: #e6edf6;
+}
+pre {
+  white-space: pre-wrap;
+  background: #0e1728;
+  border: 1px solid #2b3b5f;
+  border-radius: 8px;
+  padding: 0.75rem;
+  margin-top: 0.75rem;
+}
+label { display: flex; align-items: center; gap: 0.4rem; }

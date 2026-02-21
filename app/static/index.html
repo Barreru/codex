@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Financial Therapy Coach</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Financial Therapy Coach (MVP)</h1>
+      <p class="subtitle">Agentic financial planning + behavioral coaching prototype</p>
+
+      <section class="card">
+        <h2>KMSI-R Snapshot</h2>
+        <p>Rate each statement from 1 (strongly disagree) to 12 (strongly agree).</p>
+        <form id="profile-form">
+          <div id="questions"></div>
+          <button type="submit">Generate profile</button>
+        </form>
+        <pre id="profile-output"></pre>
+      </section>
+
+      <section class="card">
+        <h2>What-if Scenario</h2>
+        <form id="scenario-form">
+          <input name="city" value="Izmir" placeholder="City" />
+          <input name="gross_monthly_income" type="number" value="70000" placeholder="Gross monthly income" />
+          <input name="rent" type="number" value="13156" placeholder="Rent" />
+          <input name="utilities" type="number" value="2100" placeholder="Utilities" />
+          <input name="transportation" type="number" value="1500" placeholder="Transport" />
+          <input name="groceries" type="number" value="10500" placeholder="Groceries" />
+          <input name="discretionary" type="number" value="6000" placeholder="Discretionary" />
+          <input name="target_savings_rate" type="number" step="0.01" value="0.2" placeholder="Target savings rate" />
+          <button type="submit">Run simulation</button>
+        </form>
+        <pre id="scenario-output"></pre>
+      </section>
+
+      <section class="card">
+        <h2>Subscription Cancellation Draft</h2>
+        <form id="cancel-form">
+          <input name="service_name" value="Gym Membership" placeholder="Service name" />
+          <input name="monthly_cost" type="number" value="49.99" step="0.01" placeholder="Monthly cost" />
+          <input name="cancellation_reason" value="I no longer use this service" placeholder="Reason" />
+          <label><input name="user_consent" type="checkbox" checked /> I provide explicit consent</label>
+          <button type="submit">Draft cancellation</button>
+        </form>
+        <pre id="cancel-output"></pre>
+      </section>
+    </main>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
