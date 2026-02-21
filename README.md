@@ -1,6 +1,5 @@
 # Financial Therapy Coach (MVP)
 
-A runnable MVP inspired by your planning document:
 - KMSI-R style onboarding and money script scoring
 - Personalized coaching responses based on dominant script
 - A deterministic "what-if" affordability simulation
